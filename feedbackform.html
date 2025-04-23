@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #ecf0f1; padding: 20px;">
+    <h2 style="color:#2c3e50; text-align: center;">Feedback Form</h2>
+    <form style="background-color:#f2f2f2; padding:20px; border-radius:10px; max-width:400px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        
+        <label for="name" style="display:block; margin-bottom:5px; font-weight:bold;">Name:</label>
+        <input type="text" id="name" placeholder="Enter name" style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
+
+        <label for="email" style="display:block; margin-bottom:5px; font-weight:bold;">Email:</label>
+        <input type="email" id="email" placeholder="Enter email" style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
+
+        <label for="phone" style="display:block; margin-bottom:5px; font-weight:bold;">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px;">
+
+        <!-- Updated Rating Section (Using Radio Buttons) -->
+        <label style="display:block; margin-bottom:5px; font-weight:bold;">Rating:</label>
+        <div style="margin-bottom:10px;">
+            <input type="radio" id="excellent" name="rating" value="5">
+            <label for="excellent">Excellent</label><br>
+
+            <input type="radio" id="very-good" name="rating" value="4">
+            <label for="very-good">Very Good</label><br>
+
+            <input type="radio" id="good" name="rating" value="3">
+            <label for="good">Good</label><br>
+
+            <input type="radio" id="fair" name="rating" value="2">
+            <label for="fair">Fair</label><br>
+
+            <input type="radio" id="poor" name="rating" value="1">
+            <label for="poor">Poor</label>
+        </div>
+
+        <label for="comments" style="display:block; margin-bottom:5px; font-weight:bold;">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Write your feedback here..." style="width:100%; padding:8px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px; height:100px;"></textarea><br>
+
+        <input type="submit" value="Submit" style="width:100%; padding:10px; background-color:green; color:white; border:none; border-radius:5px; cursor:pointer;">
+    </form>
+</body>
+</html>
